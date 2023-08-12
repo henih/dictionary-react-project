@@ -1,4 +1,5 @@
 .Container {
+  display: block;
   background: #eadbc8;
   max-width: 1000px;
   margin: 20px;
