@@ -1,16 +1,18 @@
 import React, { useState } from "react";
+import Results from "./Results";
 import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState("");
 
   function updateKeyword(event) {
     setKeyword(event.target.value);
   }
 
   function getKeyword(response) {
-    console.log(response.data.meanings[0]);
+    setResults(response.data);
   }
 
   function handleSubmit(event) {
@@ -21,8 +23,11 @@ export default function Dictionary() {
     axios.get(apiURL).then(getKeyword);
   }
   return (
-    <div className="Dictionary d-flex justify-content-center mt-2">
-      <form onSubmit={handleSubmit}>
+    <div className="Dictionary">
+      <form
+        onSubmit={handleSubmit}
+        className="justify-content-center d-flex m-3"
+      >
         <input
           type="search"
           autoFocus
@@ -31,6 +36,7 @@ export default function Dictionary() {
         />
         <input type="submit" value="Search" className="Search-button"></input>
       </form>
+      <Results results={results} />
     </div>
   );
 }
