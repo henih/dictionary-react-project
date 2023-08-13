@@ -4,7 +4,7 @@ import Dictionary from "./Dictionary";
 export default function App() {
   return (
     <div className="App">
-      <div className="Container">
+      <div className="Container center d-block">
         <header className="App-header">
           <h1 className="text-center mt-3">
             World of Words - a Dictionary app
