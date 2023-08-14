@@ -32,10 +32,18 @@ export default function Dictionary() {
           type="search"
           autoFocus
           onChange={updateKeyword}
-          className="Search-field"
+          className="Search-field shadow"
         />
-        <input type="submit" value="Search" className="Search-button"></input>
+        <input
+          type="submit"
+          value="Search"
+          className=" shadow Search-button"
+        ></input>
       </form>
+      <p className="Dictionary-examples justify-content-center d-flex">
+        {" "}
+        Examples: sunset, sunrise, Moon, quantum...
+      </p>
       <Results results={results} />
     </div>
   );

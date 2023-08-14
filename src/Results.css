@@ -2,3 +2,7 @@
   display: block;
   margin: 0 30px;
 }
+
+.Results h3 {
+  margin: 0;
+}

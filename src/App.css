@@ -1,16 +1,27 @@
 .Container {
-  display: block;
-  background: #eadbc8;
-  max-width: 1000px;
-  margin: 20px;
-  border-radius: 10px;
+  background: #f8f0e5;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 30px;
+  width: 800px;
+  color: #102c57;
 }
 
-.Container .App-header {
-  padding: 30px 0 0 0;
+.Container h1 {
+  font-size: 52px;
+  margin: 0;
 }
-
+.Container h2 {
+  margin: 0;
+}
 .Container h4 {
   margin: 30px 0 0 0;
   opacity: 70%;
+  font-size: 20px;
+}
+
+.Container .Logo {
+  max-width: 60px;
+  display: block;
+  margin: 10px auto;
 }
