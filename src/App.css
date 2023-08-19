@@ -1,15 +1,19 @@
 .Container {
-  background: #f8f0e5;
-  margin: 30px;
+  background: #e6b3a1;
+  margin: 30px 50px;
   border-radius: 20px;
   padding: 30px;
-  width: 800px;
-  color: #102c57;
+  color: black;
+  font-weight: normal;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .Container h1 {
   font-size: 52px;
   margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .Container h2 {
   margin: 0;

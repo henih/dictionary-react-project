@@ -9,7 +9,7 @@ export default function App() {
         <div className="Container shadow">
           <header className="App-header">
             <h1 className="text-center mt-3">
-              <img src={LogoSvg} alt="Your SVG" className="Logo"/>
+              <img src={LogoSvg} alt="Your SVG" className="Logo" />
               <strong>World of Words</strong> <br />{" "}
             </h1>
             <h2 className="text-center">
@@ -19,7 +19,7 @@ export default function App() {
           </header>
           <main>
             <h4 className="text-center">What do you have on your mind?</h4>
-            <Dictionary />
+            <Dictionary defaultKeyword="surf" />
           </main>
         </div>
         <footer className="text-center m-2">

@@ -1,14 +1,21 @@
+.Dictionary section {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.05);
+}
 .Dictionary-examples {
   opacity: 60%;
   font-size: 13px;
+  margin: 0 0 20px 20px;
 }
 .Dictionary .Search-button {
   color: white;
-  background-color: #102c57;
+  background-color: #59939a;
   border-radius: 25px;
   border: none;
   line-height: 1;
-  font-size: 20px;
+  font-size: 16px;
   padding: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -17,9 +24,10 @@
 }
 
 .Search-button:hover {
-  color: #102c57;
-  background-color: white;
+  color: white;
+  background-color: #8baeb4;
   font-weight: bold;
+  transition: 200ms all ease-in-out;
 }
 
 .Dictionary .Search-field {
@@ -29,6 +37,6 @@
   line-height: 1;
   font: 20px;
   padding: 15px;
-  width: 300px;
   border-radius: 25px;
+  width: 400px;
 }
