@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.App footer {
+  opacity: 80%;
+}
+
 .Container {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #e6b3a1;
@@ -33,8 +37,20 @@
   font-weight: bold;
 }
 
-.Container .Logo {
-  max-width: 60px;
-  display: block;
-  margin: 10px auto;
+@media (max-width: 800px) {
+  .Container {
+    max-width: 650px;
+  }
+
+  .Container h1 {
+    font-size: 30px;
+  }
+
+  .Container h2 {
+    font-size: 16px;
+  }
+
+  .Container h4 {
+    font-size: 16px;
+  }
 }

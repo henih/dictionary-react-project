@@ -13,3 +13,9 @@
   list-style: none;
   margin-right: 13px;
 }
+
+@media (max-width: 800px) {
+  .Synonyms ul {
+    font-size: 13px;
+  }
+}

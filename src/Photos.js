@@ -9,7 +9,7 @@ export default function Photos(props) {
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4">
+              <div className="col-md-4 col-xs-12">
                 <a
                   href={photo.url}
                   target="_blank"
@@ -20,7 +20,7 @@ export default function Photos(props) {
                     src={photo.src.landscape}
                     key={index}
                     alt={photo.alt}
-                    className="img-fluid"
+                    className="img-fluid shadow"
                   />
                 </a>
               </div>

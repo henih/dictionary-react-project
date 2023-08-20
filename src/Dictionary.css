@@ -5,9 +5,10 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .Dictionary-examples {
-  opacity: 60%;
+  opacity: 90%;
   font-size: 13px;
   margin: 0 0 20px 20px;
+  color: white;
 }
 .Dictionary .Search-button {
   color: white;
@@ -38,5 +39,11 @@
   font: 20px;
   padding: 15px;
   border-radius: 25px;
-  width: 400px;
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  .Dictionary .Search-button {
+    font-size: 14px;
+  }
 }
