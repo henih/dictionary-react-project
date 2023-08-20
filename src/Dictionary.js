@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Results from "./Results";
+import Photos from "./Photos";
 import axios from "axios";
 import "./Dictionary.css";
 
@@ -7,9 +8,14 @@ export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState("");
   let [loaded, setLoaded] = useState(false);
+  let [photos, setPhotos] = useState(null);
 
   function updateKeyword(event) {
     setKeyword(event.target.value);
+  }
+
+  function handleImageResponse(response) {
+    setPhotos(response.data.photos);
   }
 
   function getKeyword(response) {
@@ -17,9 +23,13 @@ export default function Dictionary(props) {
   }
 
   function search() {
-    let apiKey = "oa503cb248d231a90f14935068e8t36f";
+    const apiKey = "oa503cb248d231a90f14935068e8t36f";
     let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiURL).then(getKeyword);
+
+    const imageApiKey = "oa503cb248d231a90f14935068e8t36f";
+    let imageApiURL = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imageApiKey}`;
+    axios.get(imageApiURL).then(handleImageResponse);
   }
 
   function load() {
@@ -30,7 +40,7 @@ export default function Dictionary(props) {
     event.preventDefault();
     search();
   }
-
+  //If loaded state false run this return with defaultKeyword value
   if (loaded) {
     return (
       <div className="Dictionary">
@@ -56,7 +66,9 @@ export default function Dictionary(props) {
           {" "}
           Examples: sunset, sunrise, Moon, quantum...
         </p>
+
         <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {

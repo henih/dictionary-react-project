@@ -3,7 +3,7 @@ import Synonyms from "./Synonyms";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  console.log(props.meaning.synonyms);
+ // console.log(props.meaning.synonyms);
   return (
     // Checks if Meaning props is empty or not, if empty displays the string "none"
     <div className="Meaning">

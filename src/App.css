@@ -1,4 +1,10 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .Container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #e6b3a1;
   margin: 30px 50px;
   border-radius: 20px;
@@ -17,11 +23,14 @@
 }
 .Container h2 {
   margin: 0;
+  color: white;
 }
 .Container h4 {
   margin: 30px 0 0 0;
-  opacity: 70%;
   font-size: 20px;
+  color: white;
+  text-shadow: #e6b3a1;
+  font-weight: bold;
 }
 
 .Container .Logo {

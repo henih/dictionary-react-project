@@ -5,10 +5,11 @@
 .Synonyms ul {
   margin: 0;
   padding: 0 10px;
+  font-size: 14px;
 }
 
 .Synonyms li {
   display: inline-block;
   list-style: none;
-  margin-right: 15px;
+  margin-right: 13px;
 }
